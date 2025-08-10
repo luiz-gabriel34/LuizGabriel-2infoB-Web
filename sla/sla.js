@@ -8,6 +8,7 @@ const audio = new Audio('audio.mp3')
 const tam = 30;
 let dire, loop;
 let cont = 0;
+window.alert(`Bem vindo ao jogo da cobrinha para mover ela use as setas e evite os obstáculos e comida venenosas aproveite a experiência`);
 const obstaculos = [
     {x: 30, y: 390},
     {x: 60, y: 390},
