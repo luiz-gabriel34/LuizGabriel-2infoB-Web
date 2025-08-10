@@ -4,6 +4,10 @@ const potu = document.querySelector('.p');
 const final = document.querySelector('.fi');
 const menu = document.querySelector(".menu");
 const btn = document.querySelector('.jg');
+const audio = new Audio('audio.mp3')
+const tam = 30;
+let dire, loop;
+let cont = 0;
 const obstaculos = [
     {x: 30, y: 390},
     {x: 60, y: 390},
@@ -42,12 +46,6 @@ const Obstaculos = () => {
         ctx.fillRect(ob.x, ob.y, tam, tam);
     });
 }
-
-const audio = new Audio('audio.mp3')
-
-const tam = 30;
-
-let dire, loop;
 
 let cobra = [
     {x: 270, y: 240}
@@ -144,8 +142,6 @@ const linha = () => {
         ctx.stroke();
     }
 }
-
-let cont = 0;
 
 const comer = () => {
     const cabe = cobra[cobra.length - 1];
